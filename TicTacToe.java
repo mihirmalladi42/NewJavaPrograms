@@ -9,7 +9,7 @@ public class TicTacToe {
         String res1 = player1.nextLine();
         if (res1.equalsIgnoreCase("a1")) {
             if (xAndO[0][0] == 'X' || xAndO[0][0] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -20,7 +20,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("a2")) {
             if (xAndO[0][1] == 'X' || xAndO[0][1] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -31,7 +31,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("a3")) {
             if (xAndO[0][2] == 'X' || xAndO[0][2] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -42,7 +42,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("b1")) {
             if (xAndO[1][0] == 'X' || xAndO[1][0] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -53,7 +53,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("b2")) {
             if (xAndO[1][1] == 'X' || xAndO[1][1] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -64,7 +64,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("b3")) {
             if (xAndO[1][2] == 'X' || xAndO[1][2] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -75,7 +75,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("c1")) {
             if (xAndO[2][0] == 'X' || xAndO[2][0] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -86,7 +86,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("c2")) {
             if (xAndO[2][1] == 'X' || xAndO[2][1] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -97,7 +97,7 @@ public class TicTacToe {
             }
         } else if (res1.equalsIgnoreCase("c3")) {
             if (xAndO[2][2] == 'X' || xAndO[2][2] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -110,14 +110,16 @@ public class TicTacToe {
             System.out.println(RED + "Please enter a correct response." + RESET);
             TicTacToe redo = new TicTacToe(xAndO);
         }
-        System.out.print(xAndO[0][0]);
-        System.out.print(xAndO[0][1]);
+        System.out.print(xAndO[0][0] + "|");
+        System.out.print(xAndO[0][1] + "|");
         System.out.println(xAndO[0][2]);
-        System.out.print(xAndO[1][0]);
-        System.out.print(xAndO[1][1]);
+        System.out.println("-+-+-");
+        System.out.print(xAndO[1][0] + "|");
+        System.out.print(xAndO[1][1] + "|");
         System.out.println(xAndO[1][2]);
-        System.out.print(xAndO[2][0]);
-        System.out.print(xAndO[2][1]);
+        System.out.println("-+-+-");
+        System.out.print(xAndO[2][0] + "|");
+        System.out.print(xAndO[2][1] + "|");
         System.out.println(xAndO[2][2]);
         System.out.println();
     } 
@@ -128,7 +130,7 @@ public class TicTacToe {
         String res2 = player2.nextLine();
         if (res2.equalsIgnoreCase("a1")) {
             if (xAndO[0][0] == 'X' || xAndO[0][0] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -139,7 +141,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("a2")) {
             if (xAndO[0][1] == 'X' || xAndO[0][1] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -150,7 +152,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("a3")) {
             if (xAndO[0][2] == 'X' || xAndO[0][2] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -161,7 +163,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("b1")) {
             if (xAndO[1][0] == 'X' || xAndO[1][0] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -172,7 +174,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("b2")) {
             if (xAndO[1][1] == 'X' || xAndO[1][1] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -183,7 +185,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("b3")) {
             if (xAndO[1][2] == 'X' || xAndO[1][2] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -194,7 +196,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("c1")) {
             if (xAndO[2][0] == 'X' || xAndO[2][0] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -205,7 +207,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("c2")) {
             if (xAndO[2][1] == 'X' || xAndO[2][1] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -216,7 +218,7 @@ public class TicTacToe {
             }
         } else if (res2.equalsIgnoreCase("c3")) {
             if (xAndO[2][2] == 'X' || xAndO[2][2] == 'O') {
-                if (xAndO[0][0] != '_' && xAndO[0][1] != '_' && xAndO[0][2] != '_' && xAndO[1][0] != '_' && xAndO[1][1] != '_' && xAndO[1][2] != '_' && xAndO[2][0] != '_' && xAndO[2][1] != '_' && xAndO[2][2] != '_') {
+                if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
                     System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
@@ -229,19 +231,21 @@ public class TicTacToe {
             System.out.println(RED + "Please enter a correct response." + RESET);
             TicTacToe redo = new TicTacToe(xAndO, 5);
         }
-        System.out.print(xAndO[0][0]);
-        System.out.print(xAndO[0][1]);
+        System.out.print(xAndO[0][0] + "|");
+        System.out.print(xAndO[0][1] + "|");
         System.out.println(xAndO[0][2]);
-        System.out.print(xAndO[1][0]);
-        System.out.print(xAndO[1][1]);
+        System.out.println("-+-+-");
+        System.out.print(xAndO[1][0] + "|");
+        System.out.print(xAndO[1][1] + "|");
         System.out.println(xAndO[1][2]);
-        System.out.print(xAndO[2][0]);
-        System.out.print(xAndO[2][1]);
+        System.out.println("-+-+-");
+        System.out.print(xAndO[2][0] + "|");
+        System.out.print(xAndO[2][1] + "|");
         System.out.println(xAndO[2][2]);
         System.out.println();
     }
     public static void main(String[] args) {
-        char[][] xAndO = {{'_', '_', '_'}, {'_', '_', '_'}, {'_', '_', '_'}};
+        char[][] xAndO = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
         for (int turns = 1; turns <= 5; turns++) {
             if (xAndO[0][0] == 'X' && xAndO[0][1] == 'X' && xAndO[0][2] == 'X') {
                 System.out.println();
@@ -313,4 +317,4 @@ public class TicTacToe {
         }
     }
 }
-//316 lines of code for tic tac toe imagine chess lol
+//320 lines of code for tic tac toe imagine chess lol
