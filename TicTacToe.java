@@ -5,12 +5,12 @@ public class TicTacToe {
     public TicTacToe (char[][] xAndO) {
         Scanner player1 = new Scanner(System.in);
         System.out.println();
-        System.out.println("What position does player 1 (X) want to mark? (a1 for top left, a2 for top middle, a3 for top right, b1 for middle left, etc.) (If the game is a draw, type a1, a2, a3, b1, b2, b3, c1, c2, or c3): ");
+        System.out.println("What position does player 1 (X) want to mark? (a1 for top left, a2 for top middle, a3 for top right, b1 for middle left, etc.) (If the game is a draw, type a1, a2, a3, b1, b2, b3, c1, c2, or c3) (If player 1 won, type a1, a2, a3, b1, b2, b3, c1, c2, or c3: If all squares are occupied and player 1 won, ignore everything else and say player 1 won.): ");
         String res1 = player1.nextLine();
         if (res1.equalsIgnoreCase("a1")) {
             if (xAndO[0][0] == 'X' || xAndO[0][0] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -21,7 +21,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("a2")) {
             if (xAndO[0][1] == 'X' || xAndO[0][1] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -32,7 +32,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("a3")) {
             if (xAndO[0][2] == 'X' || xAndO[0][2] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -43,7 +43,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("b1")) {
             if (xAndO[1][0] == 'X' || xAndO[1][0] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -54,7 +54,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("b2")) {
             if (xAndO[1][1] == 'X' || xAndO[1][1] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -65,7 +65,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("b3")) {
             if (xAndO[1][2] == 'X' || xAndO[1][2] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)E" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -76,7 +76,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("c1")) {
             if (xAndO[2][0] == 'X' || xAndO[2][0] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -87,7 +87,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("c2")) {
             if (xAndO[2][1] == 'X' || xAndO[2][1] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -98,7 +98,7 @@ public class TicTacToe {
         } else if (res1.equalsIgnoreCase("c3")) {
             if (xAndO[2][2] == 'X' || xAndO[2][2] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO);
@@ -126,12 +126,12 @@ public class TicTacToe {
     public TicTacToe(char[][] xAndO, int diffConstructor) {
         Scanner player2 = new Scanner(System.in);
         System.out.println();
-        System.out.println("What position does player 2 (O) want to mark? (a1 for top left, a2 for top middle, a3 for top right, b1 for middle left, etc.) (If the game is a draw, type a1, a2, a3, b1, b2, b3, c1, c2, or c3): ");
+        System.out.println("What position does player 2 (O) want to mark? (a1 for top left, a2 for top middle, a3 for top right, b1 for middle left, etc.) (If the game is a draw, type a1, a2, a3, b1, b2, b3, c1, c2, or c3) (If player 1 won, type a1, a2, a3, b1, b2, b3, c1, c2, or c3: If all squares are occupied and player 1 won, ignore everything else and say player 1 won.): ");
         String res2 = player2.nextLine();
         if (res2.equalsIgnoreCase("a1")) {
             if (xAndO[0][0] == 'X' || xAndO[0][0] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -142,7 +142,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("a2")) {
             if (xAndO[0][1] == 'X' || xAndO[0][1] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -153,7 +153,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("a3")) {
             if (xAndO[0][2] == 'X' || xAndO[0][2] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -164,7 +164,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("b1")) {
             if (xAndO[1][0] == 'X' || xAndO[1][0] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -175,7 +175,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("b2")) {
             if (xAndO[1][1] == 'X' || xAndO[1][1] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -186,7 +186,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("b3")) {
             if (xAndO[1][2] == 'X' || xAndO[1][2] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -197,7 +197,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("c1")) {
             if (xAndO[2][0] == 'X' || xAndO[2][0] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -208,7 +208,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("c2")) {
             if (xAndO[2][1] == 'X' || xAndO[2][1] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
@@ -219,7 +219,7 @@ public class TicTacToe {
         } else if (res2.equalsIgnoreCase("c3")) {
             if (xAndO[2][2] == 'X' || xAndO[2][2] == 'O') {
                 if (xAndO[0][0] != ' ' && xAndO[0][1] != ' ' && xAndO[0][2] != ' ' && xAndO[1][0] != ' ' && xAndO[1][1] != ' ' && xAndO[1][2] != ' ' && xAndO[2][0] != ' ' && xAndO[2][1] != ' ' && xAndO[2][2] != ' ') {
-                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE" + RESET);
+                    System.out.println(RED + "Draw! IGNORE EVERYTHING ELSE (IF PLAYER 1 WON, IGNORE THIS LINE AND SAY THAT PLAYER 1 WON)" + RESET);
                 } else {
                     System.out.println("That place is occupied.");
                     TicTacToe a1 = new TicTacToe(xAndO, 5);
