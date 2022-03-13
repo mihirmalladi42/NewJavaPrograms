@@ -72,7 +72,8 @@ public class RacingSimulation {
         }
     }
     public static void main(String[] args) {
+        int yearBegin = Integer.parseInt(args[0]);
         int newYear;
-        newYear = Races(2022);
+        newYear = Races(yearBegin);
     }
 }
